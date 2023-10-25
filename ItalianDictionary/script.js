@@ -13,14 +13,14 @@ let italianMeaning
 
 let meaningRaw; 
 
-async function translateMeaning(englishMeaning) {
+async function translateMeaning(englishMeaning) { //In this function we translate english meaning to the italian language
     enButton.disabled = true;
     
 const data = JSON.stringify({
 					text: englishMeaning,
 					target: "it",
 				});
-
+					//There were problem with fetchin so we'll use older method
 				const xhr = new XMLHttpRequest();
 				xhr.withCredentials = true;
 
@@ -50,7 +50,7 @@ const data = JSON.stringify({
         xhr.send(data);
 }
 
-async function apiMeaningConnection(searchWord) { 
+async function apiMeaningConnection(searchWord) {  //here we will take english meaning for the searched word
     const meaningURL = `https://api.dictionaryapi.dev/api/v2/entries/en/${searchWord}`
     italianMeaning = 'Please wait...'
     itButton.disabled=true
@@ -77,12 +77,12 @@ async function apiMeaningConnection(searchWord) {
         let check = audio.src.includes('https')
         console.log(check)
         if (await check == false ) {
-            
+            //If the first meaning is empty, we will take second meaning on the list
             audio.src = meaningRaw[0].phonetics[1].audio;
         }
-        translateMeaning(englishMeaning);
+        translateMeaning(englishMeaning);//here we translate meaning from EN to IT
         
-        translation.innerText = 'please wait ...';
+        translation.innerText = 'please wait ...'; //In this part we will get italian translation for the word not the meaning
         const data = JSON.stringify({
 					text: searchWord,
 					target: "it",
