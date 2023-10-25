@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Italian Dictionary</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1>English-Italian Dictionary</h1>
+        <input type="text" class="input" id="word" placeholder="Type english word here">
+        <p class="user-info" id="user-info">Type a word in english, then press 'enter' key or arrow</p>
+        <div class="translation-div" id="translation-div">
+            <p>Your word: 
+                <span class="inserted-word" id="inserted-word"></span>
+            </p>
+            <p>Word in italian: 
+                <span class="translation" id="translation">...............</span></p>
+            <p>Meaning:
+                <span class="meaning" id="meaning">...............</span>
+                <div class="buttons">
+                <button class="button" id="english"><strong>ENGLISH</strong</button>
+                <button class="button" id="italian"><strong>ITALIAN</strong></button>
+                </div>
+                </p>
+                <p id="audio-info">English audio below:</p>
+                <audio src="" class="audio" id="audio" controls></audio>
+            
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
