@@ -1,0 +1,51 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+  body{
+    font-family: 'Neucha', cursive;
+    margin:0;
+    display:flex;
+    background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+  }
+
+  .main-container{
+    margin:5%;
+    background-color: rgba(255,255,255,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    padding:40px;
+    border-radius: 30px;
+    max-width:90%;
+    text-align: center;
+    
+  }
+#affirmation{
+  font-family: 'Dancing Script', cursive;
+font-size:25px}
+
+.icon{
+    font-size:50px;
+}
+
+#button{
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    padding:10px;
+    margin-top:5%;
+    background-color: rgba(255,255,255,0.4);
+    border-color:rgba(255,255,255,0.8);
+    text-transform: uppercase;
+    transition: all 200ms ease-in-out;
+}
+
+#button:hover{
+    background-color: rgba(255,255,255,0.6);
+    border-color:rgba(255,255,255,0.8);
+    box-shadow: 0 6px 7px rgba(0,0,0,.2);
+    transition: all 400ms ease-in-out;
+}
