@@ -9,7 +9,11 @@ const linkToWebsite = document.getElementById("web-link");
 
 
 async function changeIMG(e) {
-    
+    IMG.src = "loader.svg";
+    IMG.style.minHeight='200px'
+    e.disabled = 'true'
+    e.innerText = 'Loading'
+    e.style.background='rgba(0,0,0,0.5)'
     //console.log(e);
     let category = e.id;
     if (category == "wildlife") {
@@ -55,20 +59,23 @@ async function changeIMG(e) {
         IMG.alt = 'There is problem with API, check internet connection or try later'
     
     }
+    e.disabled = false
+    switch (category) {
+			case "nature":
+            category = "Nature";
+            e.style.background = "rgba(34, 139, 34,0.8)";
+				break;
+			case "animals":
+            category = "Animals";
+            e.style.background = "rgba(72, 61, 139,0.9)";
+				break;
+			case "places":
+            category = "Landscapes";
+            e.style.background = "rgba(220, 20, 60,0.7)";
+		}
+    e.innerText = category
 }
-
-
-
-		
-    
-    
-    
-    
-
-      
-
-
-
+ 
 buttonList.forEach(function (button) {
     button.addEventListener('click', function () { changeIMG(button) })
 })
