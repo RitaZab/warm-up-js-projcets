@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+body{
+    margin:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(38, 47, 203, 0.1);
+background-image: linear-gradient(181deg, rgba(38, 47, 203, 0.7) 0%, rgba(49, 231, 117, 1) 100%);
+height: 100%;
+
+
+}
+
+.main-container{
+    
+    align-items: center;
+    display: flex;
+    text-align: center;
+    font-family: 'Macondo', cursive;
+    border: 1px solid rgba(0,0,0, 0.8);
+    background-color: rgba(38, 47, 203, 0.2);
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    flex-direction: column;
+  margin:5%;
+  margin-bottom: 18%;
+
+flex:1;
+padding:10px
+  
+}
+
+p{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.img-box{
+    max-width: 100%;
+    max-height: auto;
+    display:flex;
+    flex:1
+}
+
+img{
+    height: 90%;
+  width: 90%;
+  border-radius: 10%;
+  border:2px solid black;
+  
+   
+}
+
+.button{
+  font-size: 22px;
+  margin:10px;
+  padding:10px;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  
+}
+
+.button:hover{
+  
+  color:white;
+  transition: 100ms;
+  box-shadow: 5px 5px 5px rgba(255,255,255,0.5);
+  cursor:pointer
+  
+}
+
+.button:disabled{
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+#contribution{
+  font-size: 11px;
+  margin-top: 1px;
+}
+
+#nature{background-color: rgba(34, 139, 34,0.8);}
+#wildlife{background-color: rgba(72, 61, 139,0.9);}
+#landscapes{background: rgba(220, 20, 60,0.7);}
+
+
+@media screen and (max-width: 630px){
+  body{
+    height: 100vh;
+    
+  }
+  .main-container{
+    margin:5%}
+  
+ .button{
+  display: block;
+  margin:30px;
+  font-size: 22px;
+  margin:10px;
+  padding:10px;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  
+ }
+ .button:hover{
+   color:white;
+  transition: 100ms;
+  cursor:pointer
+}
+}
+
+
