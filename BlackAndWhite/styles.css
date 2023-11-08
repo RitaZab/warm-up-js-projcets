@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+body{
+    margin:0;
+    display:flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+font-family: 'Edu TAS Beginner', cursive;
+flex-direction: column;
+ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+h1{
+    font-size: 40px;
+}
+.main-container{
+    text-align: center;
+    
+    margin:5%;
+    max-width:90vh;
+    
+    
+    border: 5px solid #231e15;
+    border-radius: 50px;
+    background-color: #c2b59b;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 24px;
+}
+
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+ .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient( 89.7deg, rgba(223,0,0,1) 2.7%, rgba(214,91,0,1) 15.1%, rgba(233,245,0,1) 29.5%, rgba(23,255,17,1) 45.8%, rgba(29,255,255,1) 61.5%, rgba(5,17,255,1) 76.4%, rgba(202,0,253,1) 92.4% );;
+  -webkit-transition: .4s;
+  transition: .4s;
+} 
+
+ .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: black;
+  transition: .4s;
+   -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:after + input:checked {
+
+background-image: linear-gradient(315deg, #000000 0%, #FFFFFF 74%);
+
+}
+ input:checked + .slider {
+  background-image: linear-gradient(315deg, #000000 0%, #FFFFFF 74%);
+  
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(76px);
+  -ms-transform: translateX(76px);
+  transform: translateX(76px);
+} 
+
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 
+
+img{
+    max-width:90%;
+    border: solid 2px black
+    
+}
+.checkbox{
+    margin:20px;
+    font-size:20px
+}
+
+p{font-size: 11px;}
+
+#img-btn{
+    margin:20px;
+    padding:10px;
+    font-size:20px;
+    border-radius: 50px;
+    border-color: #231e15;
+    background-color: #6f6043;
+    cursor: pointer;
+}
+
+#img-btn:hover{
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  color: antiquewhite;
+}
+
+@media screen and (max-width: 485px) {
+  body{height: 100vh;}
+}
